@@ -46,7 +46,7 @@ public class LKTest {
         $("[name=login]").setValue(blockedUser.getLogin());
         $("[name=password]").setValue(blockedUser.getPassword());
         $("[data-test-id=action-login]").click();
-        $(".notification__content").shouldBe(visible).shouldHave(Condition.exactText("Ошибка! Пользователь заблокирован"));
+        $(".notification__content").shouldBe(visible).shouldHave(Condition.exactText("Упс! Пользователь заблокирован"));
     }
 
     @Test
